@@ -1,12 +1,12 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React from 'react';
+import ReactPlayer from 'react-player';
 
-function Player() {
+function Player({ video }) {
   return (
-    <div className='Player'>
-        <ReactPlayer/>
+    <div className="video-player">
+      <ReactPlayer url={video.url} controls={true} width="500px" height="500px" />
     </div>
-  )
+  );
 }
 
-export default Player
+export default Player;
