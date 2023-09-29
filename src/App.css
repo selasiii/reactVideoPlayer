@@ -11,20 +11,23 @@
   width: 100%;
   transform: translateY(-50%);
 }
+
 .slider__viewport {
   position: relative;
   height: 100%;
   width: 100%;
 }
+
 .slider__viewbox {
   display: block;
   position: relative;
   perspective: 100vw;
   margin: 0 auto;
-  width: 33.3333333333%;
+  width: 33.3333%;
   max-width: calc(50vh);
   z-index: 0;
 }
+
 .slider__viewbox::before {
   position: relative;
   top: 0;
@@ -35,6 +38,7 @@
   padding-bottom: 150%;
   width: 100%;
 }
+
 .slider__container {
   position: absolute;
   top: 0;
@@ -249,7 +253,7 @@ input.slider-target {
   bottom: 0;
   content: "";
   background-image: linear-gradient(0deg, #000 0%, transparent 100%);
-  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.24), inset -1px -1px 0 0 rgba(0, 0, 0, 0.7);
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0), inset -1px -1px 0 0 rgba(0, 0, 0, 0.7);
   border-radius: inherit;
   z-index: 1;
 }
@@ -280,6 +284,19 @@ input.slider-target {
   line-height: 1.25;
   z-index: 2;
 }
+
+.card-meta-item-btn{
+  cursor: pointer;
+  border: 1px solid #000000a5;
+  border-radius: 50px;
+  background-color: transparent;
+  height: 60px;
+  width: 100px;
+  color: #000000a5;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
 .card-title {
   display: block;
   font-size: 3.2rem;
@@ -337,13 +354,6 @@ input.slider-target {
     display: none;
   }
 }
-.card-meta {
-  display: block;
-  font-size: 1.4rem;
-  line-height: 1;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
 .card-meta span::before {
   display: inline-block;
   margin: 0 0.5rem 0.2rem;
@@ -355,9 +365,11 @@ input.slider-target {
   vertical-align: middle;
   background-color: currentColor;
 }
+
 .card-meta span:first-child {
   margin-left: 0;
 }
+
 .card-meta span:first-child::before {
   display: none;
 }
